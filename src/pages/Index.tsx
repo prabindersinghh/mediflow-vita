@@ -1,7 +1,7 @@
 import SiteHeader from "@/components/layout/SiteHeader";
+import { NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Seo from "@/components/seo/Seo";
-
 const Index = () => {
   return (
     <>
@@ -13,8 +13,8 @@ const Index = () => {
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">Healthcare, simplified for Patients, Doctors, and Hospitals</h1>
             <p className="text-lg text-muted-foreground mb-8">Book appointments, conduct virtual consultations, manage records, and publish hospital programs — all in one secure platform.</p>
             <div className="flex items-center justify-center gap-3">
-              <a href="/signup"><Button variant="hero" size="lg">Get Started</Button></a>
-              <a href="/login"><Button variant="outline" size="lg">Login</Button></a>
+              <NavLink to="/signup"><Button variant="hero" size="lg">Get Started</Button></NavLink>
+              <NavLink to="/login"><Button variant="outline" size="lg">Login</Button></NavLink>
             </div>
           </div>
         </section>
